@@ -56,8 +56,3 @@ Total score == 10 frames x 15 == 150
 
 X|7/|9-|X|-8|8/|-6|X|X|X||81
 Total score == 167
-
-TestList:
-Input --|--|--|--|--|--|--|--|--|-- Output: 0;
-Input 1-|--|--|--|--|--|--|--|--|-- Output: 1;
-Input 11|--|--|--|--|--|--|--|--|-- Output: 2;
