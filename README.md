@@ -1,109 +1,109 @@
 # Bowling Game
 
-## Descripción
+## Description
 
-Bowling Game es un kata de programación cuyo objetivo es implementar un sistema de puntuación para una partida de bolos siguiendo las reglas oficiales del juego.
+Bowling Game is a programming kata whose objective is to implement a scoring system for a bowling game following the official rules of the sport.
 
-El programa debe ser capaz de registrar los lanzamientos de una partida y calcular la puntuación final teniendo en cuenta strikes, spares y lanzamientos normales.
+The program must be able to record the rolls of a game and calculate the final score, taking into account strikes, spares, and normal rolls.
 
-## Reglas del juego
+## Game Rules
 
-Una partida de bolos consta de 10 frames. En cada frame el jugador tiene hasta dos lanzamientos para derribar 10 bolos, excepto en el último frame, donde pueden existir lanzamientos adicionales si se consigue un strike o spare.
+A bowling game consists of 10 frames. In each frame, the player has up to two rolls to knock down 10 pins, except in the last frame, where additional rolls may be awarded if a strike or spare is scored.
 
-### Puntuación
+### Scoring
 
-- **Strike**: derribar los 10 bolos en el primer lanzamiento del frame.
-  - Puntuación: 10 + suma de los dos siguientes lanzamientos.
+- **Strike**: knocking down all 10 pins on the first roll of the frame.
+  - Score: 10 + the sum of the next two rolls.
 
-- **Spare**: derribar los 10 bolos en dos lanzamientos del frame.
-  - Puntuación: 10 + el siguiente lanzamiento.
+- **Spare**: knocking down all 10 pins in two rolls of the frame.
+  - Score: 10 + the next roll.
 
-- **Open frame**: no se derriban los 10 bolos.
-  - Puntuación: suma de los bolos derribados.
+- **Open frame**: not all 10 pins are knocked down.
+  - Score: sum of the pins knocked down.
 
-## Ejemplo
+## Example
 
 ```text
 X | 7 / | 9 - | X | - 8 | 8 / | - 6 | X | X | X 8 1
 ```
 
-Resultado final: puntuación total calculada según reglas anteriores.
+Final result: total score calculated according to the rules above.
 
-## Conceptos trabajados
+## Concepts Covered
 
-- Programación en Java
-- Diseño de clases
-- Lógica de negocio
-- Control de flujo
-- Manejo de arrays o listas
-- Refactorización
+- Java programming
+- Class design
+- Business logic
+- Control flow
+- Array or list handling
+- Refactoring
 - TDD (Test Driven Development)
 
-## Funcionalidades
+## Features
 
-- Registrar lanzamientos de una partida.
-- Detectar strikes.
-- Detectar spares.
-- Calcular la puntuación por frame.
-- Calcular la puntuación total de la partida.
-- Gestionar el décimo frame con reglas especiales.
+- Record game rolls.
+- Detect strikes.
+- Detect spares.
+- Calculate frame score.
+- Calculate total game score.
+- Handle the 10th frame with special rules.
 
-## Reglas de implementación
+## Implementation Rules
 
-El sistema debe:
+The system must:
 
-- Procesar los rolls uno a uno.
-- Mantener el estado de la partida.
-- Calcular la puntuación final correctamente según los bonos.
-- Ser fácilmente testeable.
+- Process rolls one by one.
+- Maintain the game state.
+- Correctly compute the final score including bonuses.
+- Be easily testable.
 
-## Casos de ejemplo
+## Example Cases
 
-### Partida perfecta
+### Perfect Game
 
 ```text
 X X X X X X X X X XXX
 ```
 
-Resultado:
+Result:
 
 ```text
 300
 ```
 
-### Partida sin strikes ni spares
+### No strikes or spares
 
 ```text
 9- 9- 9- 9- 9- 9- 9- 9- 9- 9-
 ```
 
-Resultado:
+Result:
 
 ```text
 90
 ```
 
-### Todos spares
+### All spares
 
 ```text
 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5
 ```
 
-Resultado:
+Result:
 
 ```text
 150
 ```
 
-## Objetivo
+## Objective
 
-El objetivo del kata es practicar:
+The goal of this kata is to practice:
 
-- Modelado de dominio
-- Gestión de estados complejos
-- Implementación de reglas acumulativas
-- Diseño orientado a test
+- Domain modeling
+- Complex state management
+- Implementation of cumulative rules
+- Test-driven design
 
-## Autor
+## Author
 
-Ejercicio realizado como parte de las prácticas de Cyber Dojo utilizando Java.
+Exercise completed as part of Cyber Dojo practice sessions using Java.
